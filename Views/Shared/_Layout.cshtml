@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .mainheader {
+            width: 100%;
+            background-color: #fa183e;
+            color: white;
+            height: 72px;
+        }
+       
+        .b{
+            display:inline-block;
+            color:white;
+            margin-top:0px;
+        }
+        .vi {
+            
+            color: white;
+            margin: 37px;
+            text-decoration:none;
+        }
+        .c{
+            background-color:orangered;
+        }
+        .vikas {
+            background-color: #fa183e;
+            color: white;
+        }
+        .image{
+            width:48px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="mainheader">
+        <nav>
+            <ul class="ulist">
+                <li class="b"><img class="image" src="~/images/icl3.dib" /></li>
+                <li class="b">@Html.ActionLink("Home", "Index", " ", new { @class = "vi" })</li>
+            <li class="b">@Html.ActionLink("Course", "Course", " ", new { @class = "vi" })</li>
+            <li class="b">@Html.ActionLink("Addmission/Exam", "Anoucement", " ", new { @class = "vi" })</li>
+            <li class="b">@Html.ActionLink("Activity","Activity", " ", new { @class = "vi" })</li>
+            <li class="b">@Html.ActionLink("Contanct", "Contanct", " ", new { @class = "vi" })</li>
+            <li class="b">@Html.ActionLink("Login", "Login", " ", new { @class = "vi" })</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="">
+        @RenderBody()
+        </div>
+        <br />
+
+        <footer class="">
+        </footer>
+   
+</body>
+</html>

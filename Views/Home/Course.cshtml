@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "Course";
+}
+
+<style>
+    .body-container{
+       
+    }
+    .header-container{
+       
+    }
+    .list-container {
+        color: black;
+        border-radius: 4px;
+        border: 2px solid black;
+        color: #333;
+        background-color: #f5f5f5;
+        border-color: #ddd;
+        height:40px;
+        margin-top:15px;
+    }
+    .text-denger{
+       text-decoration:none;
+       color:black;
+    }
+    .text-denger:hover{
+        background-image:url();
+        color:red;
+
+    }
+</style>
+<h2>Course</h2>
+<div class="body-container">
+
+    <div class="header-container">
+        <h2>UG COURSES</h2>
+        <div class="list-container"> @Html.ActionLink("Bachelor of Arts","Course","Home", new {@class="text-denger"})</div>
+        <div class="list-container"> @Html.ActionLink("Bachelor of Science", "Course", " ", new { @class = "text-denger" })</div>
+        <div class="list-container">@Html.ActionLink("Bachelor of Commerce", "Course", " ", new { @class = "text-denger" })</div>
+        <div class="list-container">@Html.ActionLink("Bachelor of Science in Computer Science", "Course", " ", new { @class = "text-denger" })</div>
+        <div class="list-container">@Html.ActionLink("Bachelor of Science in Information Technology", "Course", " ", new { @class = "text-denger" })</div>
+        
+        <div class="list-container">@Html.ActionLink("Bachelor of Management Studies", "Course", " ", new { @class = "text-denger" })</div>
+    </div>
+    <div>
+        <h2>PG COURSES</h2>
+        <div class="list-container"> @Html.ActionLink("M.Sc(Botany)", "Course", " ", new { @class = "text-denger" })</div>
+        <div class="list-container"> @Html.ActionLink("M.Sc(I.T)", "Course", " ", new { @class = "text-denger" })</div>
+        <div class="list-container">@Html.ActionLink("M.Com", "Course", " ", new { @class = "text-denger" })</div>
+       
+
+    </div>
+</div>
+
+

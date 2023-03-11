@@ -1,0 +1,218 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    .slideshow-container {
+        max-width: 100%;
+        height: 622px;
+        position: relative;
+        
+    }
+
+
+    /* Number text (1/4 etc) */
+
+    .numbertext {
+       
+     
+       
+       
+    }
+
+
+    /* The dots/bullets/indicators */
+
+    .dot {
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+    .ullist {
+        text-align: center;
+    }
+
+
+    /* Fading animation */
+
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.8s;
+        animation-name: fade;
+        animation-duration: 3.8s;
+    }
+
+    .slideimage {
+        width: 100%;
+        height: 622px;
+    }
+
+    .College {
+        text-align: center;
+        color: orange;
+    }
+
+    .mainContent {
+        line-height: 0px;
+        border-radius: 5px;
+    }
+
+    .Content {
+        width: 70%;
+        float: left;
+        border-radius: 5px;
+    }
+
+    
+
+    .mainFooter {
+        width: 100%;
+        float: left;
+        border-radius: 5px;
+    }
+    .maincontener{
+        position:relative;
+        top:300px
+    }
+    .mainparabody{
+        color:mediumorchid;
+       
+    }
+    .articelpara {
+        border: 1px solid black;
+        width: 100%;
+        line-height: 29px;
+        color: WHITE;
+        background-color: DARKTURQUOISE;
+    }
+    .articelpatamiddle {
+        border: 1px solid black;
+        width: 100%;
+        line-height: 29px;
+        margin-top: 36px;
+        color: WHITE;
+        background-color: DARKTURQUOISE;
+    }
+    .infra-container{
+        display:inline-block;
+    }
+    .s{
+        width: 456px;
+        border: 2px solid steelblue;
+        margin-right: 6px;
+       
+        height: 381px;
+    }
+    .details{
+        text-align:center;
+    }
+     
+
+</style>
+
+       
+
+
+<body class="body">
+    <div>
+     
+    </div>
+
+
+    <div class="slideshow-container">
+
+        <div class="iambrpslides fade">
+            
+            <img class="slideimage" src="https://lh3.googleusercontent.com/p/AF1QipO2PwNMMOqPgbLY-RmWbl3bl1BiOVbi5mTTdhZs=s1360-w1360-h1020">
+        </div>
+
+        <div class="iambrpslides fade">
+            
+            <img class="slideimage" src="https://i.pinimg.com/originals/e1/0c/9a/e10c9a6cf80ef8163367de91ddbeb5b9.jpg">
+        </div>
+
+        <div class="iambrpslides fade">
+            
+            <img class="slideimage" src="https://lh3.googleusercontent.com/p/AF1QipN0__UkMf9D45ti4DTSajXvZgDNp1ncbi2Huo0n=s1360-w1360-h1020">
+        </div>
+
+    </div>
+
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("iambrpslides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2500); // This is for Changing image every 2.5 seconds
+        }
+    </script>
+
+    <div class="mainparabody">
+        <div class="articelpara">
+        <h2>MOTILAL JHUJHUNWALA COLLEGE VASHI</h2>
+        
+        <p>
+            "The College is situated in Vashi, presumed to be the nucleus of Navi Mumbai which is a city of the 21st century. India Culture League was founded in 1942 by a small group of young people under the leadership of Late Shri Amalendu Roye,
+            with the objective of inculcating the spirit of patriotism in the youth, through cultural and sports activities. After independence, it was re-christened as “India Culture League”(ICL) ; since then it is actively promoting Arts,
+            Music, Drama, Dance, Sports and Education. In the world of sports, particularly in the history of football culture in Mumbai, ICL has played a significant role by winning many prestigious championships<br> <br />ICL entered the educational
+            field in 1975 with the formation of “India Culture League Education Society” (ICLES). It selected Vashi, Navi Mumbai as its “Karma Bhoomi” to cater to the educational needs of the wards of "Project Affected Families” (PAF) of CIDCO,
+            the wards of Koli and Agri Samaj for pursuing higher education . Most of the students are first learners and from economically lower strata. An economically independent society is the stepping stone to combined productivity that
+            leads to the economic growth of the nation as a whole; so when the people of a nation are educated, they definitely carve ways to be self sufficient
+        </p>
+       
+    </div> 
+    <div class="articelpatamiddle">
+        <h3>OBJECTIVES</h3>
+        <p>
+            "To offer high quality and affordable education to a broad spectrum of students of Navi Mumbai. To make teaching and learning a pleasant, collaborative and participative activity for students. To create opportunities to integrate class
+            room learning with field work and research. To provide skills and knowledge to prepare students to become effective leaders in their personal and professional life. To inculcate scientific approach and a spirit of inquiry. To provide
+            value based education. To create awareness about the environment through N.S.S and other co- curricular activities. To create communal harmony by teaching to respect people of different faiths and religion
+
+        </p>
+
+    </div>
+</div>
+    <div>
+        <h1 class="details">INFRASTRUCTURE</h1>
+            <ul>
+                <li class="infra-container"><img class ="s" src="https://images.shiksha.com/mediadata/images/1642582695phps2TMLc.jpeg"/></li>
+                <li class="infra-container"><img  class ="s" src="https://images.shiksha.com/mediadata/images/1642583386phpTZgo1E.jpeg"/></li>
+                <li class="infra-container"><img  class ="s" src="https://images.shiksha.com/mediadata/images/1642581299phpI76pCB.jpeg"/></li>
+            </ul>
+      
+
+    </div>
+
+
+</body>
